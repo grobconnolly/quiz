@@ -5,27 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <title>College Football Quiz</title>
+   <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Quiz</title>
 </head>
 
 <body>
-   
-    <div id="main" class="main">
-        <div class="quit">
-            <h3 id="name" class="name">Harry ad</h3>
-            <h4 id ="result" class="results">results</h4>
-            <div id="options">
-                <div class='choice' id="real">Real</div>
-                <div class='choice' id='fake'>Fake</div>
-            </div>
-            <div class='generate' id='generate'>Next</div>
-        </div>
-    </div>
+    <div class="container">
+        <header>
+            <div class="pull-left">College Mascot Quiz</div>
+            <div class="pull-right">by Rob Connoly</div>
+        </header>
 
+
+    <div class="main">
+        
+        <form class="questionForm" id="question1" data-question="1">
+            <h3>1. University of Notre Dame</h3>
+            <ul>
+                <li><input type="radio" name="question1" value="a"  /> Panthers </li>
+                <li><input type="radio" name="question1" value="b"  /> Fighting Irish </li>
+                <li><input type="radio" name="question1" value="c"  /> Bears </li>
+                <li><input type="radio" name="question1" value="d"  /> Tigers </li>
+            </ul>
+            <button id='submit'>Submit</button>
+        </form>
+
+        <form class="questionForm" id="question2" data-question="2">
+                <h3>2. University of Southern California</h3>
+                <ul>
+                    <li><input type="radio" name="question2" value="a"  /> Trojans </li>
+                    <li><input type="radio" name="question2" value="b"  /> Aztecs </li>
+                    <li><input type="radio" name="question2" value="c"  /> Bobcat </li>
+                    <li><input type="radio" name="question2" value="d"  /> Boomer </li>
+                </ul>
+                <button id='submit'>Submit</button>
+            </form>
+
+            <form class="questionForm" id="question3" data-question="3">
+                    <h3>3. University of California</h3>
+                    <ul>
+                        <li><input type="radio" name="question3" value="a"  /> Prowler </li>
+                        <li><input type="radio" name="question3" value="b"  /> Scarlet </li>
+                        <li><input type="radio" name="question3" value="c"  /> Golden Bears </li>
+                        <li><input type="radio" name="question3" value="d"  /> Ducks </li>
+                    </ul>
+                    <button id='submit'>Submit</button>
+                </form>
+
+                <form class="questionForm" id="question4" data-question="4">
+                        <h3>4. Clemson University</h3>
+                        <ul>
+                            <li><input type="radio" name="question4" value="a"  /> Zippy </li>
+                            <li><input type="radio" name="question4" value="b"  /> Hokies </li>
+                            <li><input type="radio" name="question4" value="c"  /> Rebels </li>
+                            <li><input type="radio" name="question4" value="d"  /> Tigers </li>
+                        </ul>
+                        <button id='submit'>Submit</button>
+                    </form>
+
+                    <form class="questionForm" id="question5" data-question="5">
+                            <h3>5. University of New Mexico</h3>
+                            <ul>
+                                <li><input type="radio" name="question5" value="a"  /> Cavaliers </li>
+                                <li><input type="radio" name="question5" value="b"  /> Lobos </li>
+                                <li><input type="radio" name="question5" value="c"  /> Gamecocks </li>
+                                <li><input type="radio" name="question5" value="d"  /> Devils </li>
+                            </ul>
+                            <button id='submit'>Submit</button>
+                        </form>
+                    
+                        <form class="questionForm" id="question6" data-question="6">
+                                <h3>6. University of Nebraska</h3>
+                                <ul>
+                                    <li><input type="radio" name="question6" value="a"  /> Gophers </li>
+                                    <li><input type="radio" name="question6" value="b"  /> Fighting Hawks </li>
+                                    <li><input type="radio" name="question6" value="c"  /> Comets </li>
+                                    <li><input type="radio" name="question6" value="d"  /> Cornhuskers </li>
+                                </ul>
+                                <button id='submit'>Submit</button>
+                            </form>
+
+                            <form class="questionForm" id="question7" data-question="7">
+                                    <h3>7. Austin Peay University</h3>
+                                    <ul>
+                                        <li><input type="radio" name="question7" value="a"  /> Highlanders </li>
+                                        <li><input type="radio" name="question7" value="b"  /> Governors </li>
+                                        <li><input type="radio" name="question7" value="c"  /> Jets </li>
+                                        <li><input type="radio" name="question7" value="d"  /> Lynx </li>
+                                    </ul>
+                                    <button id='submit'>Submit</button>
+                                </form>
+
+
+                                <form class="questionForm" id="question8" data-question="8">
+                                        <h3>8. Stanford University</h3>
+                                        <ul>
+                                            <li><input type="radio" name="question8" value="a"  /> Captians </li>
+                                            <li><input type="radio" name="question8" value="b"  /> Cardinal </li>
+                                            <li><input type="radio" name="question8" value="c"  /> Gladiators </li>
+                                            <li><input type="radio" name="question8" value="d"  /> Hillcats </li>
+                                        </ul>
+                                        <button id='submit'>Submit</button>
+                                    </form>
+
+
+                                    <form class="questionForm" id="question9" data-question="9">
+                                            <h3>9. University of Indiana</h3>
+                                            <ul>
+                                                <li><input type="radio" name="question9" value="a"  /> Horned Frogs </li>
+                                                <li><input type="radio" name="question9" value="b"  /> Engineers </li>
+                                                <li><input type="radio" name="question9" value="c"  /> Coyotes </li>
+                                                <li><input type="radio" name="question9" value="d"  /> Hoosiers </li>
+                                            </ul>
+                                            <button id='submit'>Submit</button>
+                                        </form>
+
+
+                                        <form class="questionForm" id="question10" data-question="10">
+                                                <h3>10. University of Georgetown</h3>
+                                                <ul>
+                                                    <li><input type="radio" name="question10" value="a"  /> Gold Diggers </li>
+                                                    <li><input type="radio" name="question10" value="b"  /> Knights </li>
+                                                    <li><input type="radio" name="question10" value="c"  /> Ice Dogs </li>
+                                                    <li><input type="radio" name="question10" value="d"  /> Hoyas </li>
+                                                </ul>
+                                                <button id='submit'>Submit</button>
+                                            </form>
+
+
+
+
+
+
+
+                        <div id="results"></div>
+                        <br>
+
+                        <footer>
+                            <div class="pull-left">
+                             Total: 10 Questions
+                            </div>
+                            <div id="stopWatch" class="getdate pull-right">
+                                0
+                            </div>
+                        </footer>
+
+    </div>
 </body>
 
 </html>
