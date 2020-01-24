@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>College Football Quiz</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -19,138 +23,659 @@
         </header>
 
 
-    <div class="main">
-            
-        <form class="questionForm" id="question1" data-question="1">
-            <h3>1. University of Notre Dame</h3>
-            <ul>
-                <li><input type="radio" name="question1" value="a"  /> Panthers </li>
-                <li><input type="radio" name="question1" value="b"  /> Fighting Irish </li>
-                <li><input type="radio" name="question1" value="c"  /> Bears </li>
-                <li><input type="radio" name="question1" value="d"  /> Tigers </li>
-            </ul>
-            <button id='submit'>Submit</button>
-        </form>
+        <div class="main">
 
-        <form class="questionForm" id="question2" data-question="2">
-                <h3>2. University of Southern California</h3>
-                <ul>
-                    <li><input type="radio" name="question2" value="a"  /> Trojans </li>
-                    <li><input type="radio" name="question2" value="b"  /> Aztecs </li>
-                    <li><input type="radio" name="question2" value="c"  /> Bobcats </li>
-                    <li><input type="radio" name="question2" value="d"  /> Boomer </li>
-                </ul>
-                <button id='submit'>Submit</button>
-            </form>
+            <!-- Question Set-Up 1 -->
+            <form class="questionForm" id="question1" data-question="1">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Question 1</h5>
+                        <p class="card-text">University of Notre Dame.</p>
+                        <div class="input-group">
 
-            <form class="questionForm" id="question3" data-question="3">
-                    <h3>3. University of California</h3>
-                    <ul>
-                        <li><input type="radio" name="question3" value="a"  /> Prowlers </li>
-                        <li><input type="radio" name="question3" value="b"  /> Scarlets </li>
-                        <li><input type="radio" name="question3" value="c"  /> Golden Bears </li>
-                        <li><input type="radio" name="question3" value="d"  /> Ducks </li>
-                    </ul>
-                    <button id='submit'>Submit</button>
+
+                            <!-- First Option-->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" value="a"
+                                            aria-label="Radio button for following text input" name="question1">
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with radio button"
+                                    placeholder="Panthers" readonly>
+                            </div>
+
+                            <!-- Second Option-->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"> 
+                                        <input type="radio" value="b" aria-label="Radio button for following text input" name="question1">
+                                    </div>
+                                </div>
+                                <input  type="text" class="form-control" aria-label="Text input with radio button"
+                                    placeholder="Fighting Irish" readonly>
+                            </div>
+
+
+                            <!-- Third Option-->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" value="c" aria-label="Radio button for following text input" name="question1">
+                                    </div>
+                                </div>
+                                <input  type="text" class="form-control" aria-label="Text input with radio button"
+                                    placeholder="Bears" readonly>
+                            </div>
+
+
+                            <!-- Forth Option-->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" value="d" value="" aria-label="Radio button for following text input" name="question1">
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with radio button"
+                                    placeholder="Tigers" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="submit" class="btn btn-primary">Submit</a>
+                </div>
                 </form>
 
-                <form class="questionForm" id="question4" data-question="4">
-                        <h3>4. Clemson University</h3>
-                        <ul>
-                            <li><input type="radio" name="question4" value="a"  /> Zippy </li>
-                            <li><input type="radio" name="question4" value="b"  /> Hokies </li>
-                            <li><input type="radio" name="question4" value="c"  /> Rebels </li>
-                            <li><input type="radio" name="question4" value="d"  /> Tigers </li>
-                        </ul>
-                        <button id='submit'>Submit</button>
-                    </form>
-
-                    <form class="questionForm" id="question5" data-question="5">
-                            <h3>5. University of New Mexico</h3>
-                            <ul>
-                                <li><input type="radio" name="question5" value="a"  /> Cavaliers </li>
-                                <li><input type="radio" name="question5" value="b"  /> Lobos </li>
-                                <li><input type="radio" name="question5" value="c"  /> Gamecocks </li>
-                                <li><input type="radio" name="question5" value="d"  /> Devils </li>
-                            </ul>
-                            <button id='submit'>Submit</button>
-                        </form>
-                    
-                        <form class="questionForm" id="question6" data-question="6">
-                                <h3>6. University of Nebraska</h3>
-                                <ul>
-                                    <li><input type="radio" name="question6" value="a"  /> Gophers </li>
-                                    <li><input type="radio" name="question6" value="b"  /> Fighting Hawks </li>
-                                    <li><input type="radio" name="question6" value="c"  /> Comets </li>
-                                    <li><input type="radio" name="question6" value="d"  /> Cornhuskers </li>
-                                </ul>
-                                <button id='submit'>Submit</button>
-                            </form>
-
-                            <form class="questionForm" id="question7" data-question="7">
-                                    <h3>7. Austin Peay University</h3>
-                                    <ul>
-                                        <li><input type="radio" name="question7" value="a"  /> Highlanders </li>
-                                        <li><input type="radio" name="question7" value="b"  /> Governors </li>
-                                        <li><input type="radio" name="question7" value="c"  /> Jets </li>
-                                        <li><input type="radio" name="question7" value="d"  /> Lynx </li>
-                                    </ul>
-                                    <button id='submit'>Submit</button>
-                                </form>
-
-
-                                <form class="questionForm" id="question8" data-question="8">
-                                        <h3>8. Stanford University</h3>
-                                        <ul>
-                                            <li><input type="radio" name="question8" value="a"  /> Captians </li>
-                                            <li><input type="radio" name="question8" value="b"  /> Cardinals </li>
-                                            <li><input type="radio" name="question8" value="c"  /> Gladiators </li>
-                                            <li><input type="radio" name="question8" value="d"  /> Hillcats </li>
-                                        </ul>
-                                        <button id='submit'>Submit</button>
-                                    </form>
-
-
-                                    <form class="questionForm" id="question9" data-question="9">
-                                            <h3>9. University of Indiana</h3>
-                                            <ul>
-                                                <li><input type="radio" name="question9" value="a"  /> Horned Frogs </li>
-                                                <li><input type="radio" name="question9" value="b"  /> Engineers </li>
-                                                <li><input type="radio" name="question9" value="c"  /> Coyotes </li>
-                                                <li><input type="radio" name="question9" value="d"  /> Hoosiers </li>
-                                            </ul>
-                                            <button id='submit'>Submit</button>
-                                        </form>
-
-
-                                        <form class="questionForm" id="question10" data-question="10">
-                                                <h3>10. University of Georgetown</h3>
-                                                <ul>
-                                                    <li><input type="radio" name="question10" value="a"  /> Gold Diggers </li>
-                                                    <li><input type="radio" name="question10" value="b"  /> Knights </li>
-                                                    <li><input type="radio" name="question10" value="c"  /> Ice Dogs </li>
-                                                    <li><input type="radio" name="question10" value="d"  /> Hoyas </li>
-                                                </ul>
-                                                <button id='submit'>Submit</button>
-                                            </form>
-
-
-
-
-
-
-
-                        <div id="results"></div>
-                        <br>
-
-                        <footer>
-                            <div class="pull-left">
-                             Total: 10 Questions
+                <!-- Question Set-Up 2 -->
+            <form class="questionForm" id="question2" data-question="2">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Question 2</h5>
+                            <p class="card-text">University of Southern California</p>
+                            <div class="input-group">
+    
+    
+                                <!-- First Option-->
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="radio" value="a"
+                                                aria-label="Radio button for following text input" name="question2">
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with radio button"
+                                        placeholder="Trojan" readonly>
+                                </div>
+    
+                                <!-- Second Option-->
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="radio" value="b" aria-label="Radio button for following text input" name="question2">
+                                        </div>
+                                    </div>
+                                    <input  type="text" class="form-control" aria-label="Text input with radio button"
+                                        placeholder="Aztecs" readonly>
+                                </div>
+    
+    
+                                <!-- Third Option-->
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="radio" value="c" aria-label="Radio button for following text input" name="question2">
+                                        </div>
+                                    </div>
+                                    <input  type="text" class="form-control" aria-label="Text input with radio button"
+                                        placeholder="Bobcats" readonly>
+                                </div>
+    
+    
+                                <!-- Forth Option-->
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <input type="radio" value="d" aria-label="Radio button for following text input" name="question2">
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with radio button"
+                                        placeholder="Bears" readonly>
+                                </div>
                             </div>
-                            <div id="stopWatch" class="pull-right">
-                                0
+                        </div>
+    
+                        <button id="submit" class="btn btn-primary">Submit</a>
+        </div>
+        </form>
+
+
+
+   <!-- Question Set-Up 3 -->
+   <form class="questionForm" id="question3" data-question="3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 3</h5>
+                <p class="card-text">University of California, Berkley</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question3">
                             </div>
-                        </footer>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Braves" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question3">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Ant Eaters" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question3">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Golden Bears" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question3">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Ducks" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+
+   <!-- Question Set-Up 4 -->
+   <form class="questionForm" id="question4" data-question="4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 4</h5>
+                <p class="card-text">University of Clemson</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question4">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Zips" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question4">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Hokies" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question4">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Rebels" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question4">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Tigers" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+   <!-- Question Set-Up 5 -->
+   <form class="questionForm" id="question5" data-question="5">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 5</h5>
+                <p class="card-text">University of New Mexico</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question5">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Cavaliers" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question5">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Lobos" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question5">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Gamecocks" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question5">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Devils" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+   <!-- Question Set-Up 6 -->
+   <form class="questionForm" id="question6" data-question="6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 6</h5>
+                <p class="card-text">University of Nebraska</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question6">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Gophers" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question6">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Fighting Hawks" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question6">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Comets" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question6">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Cornhuskers" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+   <!-- Question Set-Up 7 -->
+   <form class="questionForm" id="question7" data-question="7">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 7</h5>
+                <p class="card-text">Austin Peay University</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question7">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Highlanders" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question7">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Governors" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question7">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Jets" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question7">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Lynx" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+   <!-- Question Set-Up 3 -->
+   <form class="questionForm" id="question8" data-question="8">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 8</h5>
+                <p class="card-text">Stanford University</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question8">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Googlers" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question8">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Cardinals" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question8">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Facebookers" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question8">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="The Tweeters" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+   <!-- Question Set-Up 9 -->
+   <form class="questionForm" id="question9" data-question="9">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 9</h5>
+                <p class="card-text">University of Indiana</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question9">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Horned Frogs" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question9">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Engineers" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question9">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Coyotes" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question9">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Hoosiers" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+
+   <!-- Question Set-Up 10 -->
+   <form class="questionForm" id="question10" data-question="10">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Question 10</h5>
+                <p class="card-text">Georgetown University</p>
+                <div class="input-group">
+
+
+                    <!-- First Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="a"
+                                    aria-label="Radio button for following text input" name="question10">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Gold Diggers" readonly>
+                    </div>
+
+                    <!-- Second Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="b" aria-label="Radio button for following text input" name="question10">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Knights" readonly>
+                    </div>
+
+
+                    <!-- Third Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="c" aria-label="Radio button for following text input" name="question10">
+                            </div>
+                        </div>
+                        <input  type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Running Rebels" readonly>
+                    </div>
+
+
+                    <!-- Forth Option-->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" value="d" aria-label="Radio button for following text input" name="question10">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with radio button"
+                            placeholder="Hoyas" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</a>
+</div>
+</form>
+
+
+       
+
+        <div id="results"></div>
+        <br>
+
+        <footer>
+            <div class="pull-left">
+                Total: 10 Questions
+            </div>
+            <div id="stopWatch" class="pull-right">
+                0
+            </div>
+        </footer>
 
     </div>
 </body>

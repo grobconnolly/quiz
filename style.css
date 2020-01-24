@@ -43,6 +43,13 @@ a {
      font-size: 15px;
    }
  
+.optionName{
+}
+
+.optionText{
+
+}
+
  @media only screen and (max-width: 900px) {
    .container{
      width: 90%;
