@@ -2,6 +2,9 @@ a {
  color: white;
  list-style: none;
 }
+a:visited {
+  color:white;
+  }
 
 body{
   font-family: arial;
