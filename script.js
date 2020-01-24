@@ -42,7 +42,7 @@ $(document).ready(function() {
  //show question 1
  $('#question1').show();
 
-$('.questionForm .submit').click(function() {
+$('.questionForm #submit').click(function() {
     //get data attribute
     current = $(this).parents('form:first').data('question');
     next = $(this).parents('form:first').data('question')+1;
