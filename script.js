@@ -1,13 +1,13 @@
 var score = 0; //set score to 0
 var total = 10; //total nmumber of questions
 var point = 1; //points per correct answer
-var start = new Date;
 var highest = total * point;
 
 //init
 
 function init() {
     //set correct answers
+    
     sessionStorage.setItem('a1', "b");
     sessionStorage.setItem('a2', "a");
     sessionStorage.setItem('a3', "c");
@@ -33,10 +33,6 @@ $("#startButton").click(function (e) {
 $("#resetButton").click(function (e) {
     i = 0;
 });
-
-
-
-
 
 
 $(document).ready(function() {
