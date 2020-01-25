@@ -75,9 +75,13 @@ function process(n) {
 
 
 if (n == total) {
-    $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <a href="scoreboard.html">Add Your Name To Scoreboard!</a>')
+    $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <a href= "enterinfo.html">Add Your Name To Scoreboard!</a>')
 }
 return false;
+}
+
+window.yourPoints = function(){
+    return n;
 }
 
 
