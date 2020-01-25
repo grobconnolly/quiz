@@ -1,3 +1,5 @@
+// variables
+
 var score = 0; //set score to 0
 var total = 10; //total nmumber of questions
 var point = 1; //points per correct answer
@@ -21,7 +23,8 @@ function init() {
 
 }
 
-// timer 
+// timer
+
 var i = 1;
 $("#startButton").click(function (e) {
     setInterval(function () {
@@ -35,8 +38,10 @@ $("#resetButton").click(function (e) {
 });
 
 
+
+ //hide all questions to start
 $(document).ready(function() {
-    //hide questions to start
+   
  $('.questionForm').hide();
 
  //show question 1
@@ -46,8 +51,10 @@ $('.questionForm #submit').click(function() {
     //get data attribute
     current = $(this).parents('form:first').data('question');
     next = $(this).parents('form:first').data('question')+1;
+    
     //hide all questions
     $('.questionForm').hide();
+
     //show next question in a cool way
     $('#question'+next+'').fadeIn(400);
     process(''+current+'');
@@ -68,10 +75,11 @@ function process(n) {
 
 
 if (n == total) {
-    $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <a href="index.html">Take Quiz Again</a>')
+    $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <a href="scoreboard.html">Add Your Name To Scoreboard!</a>')
 }
 return false;
 }
+
 
 
 //adding an event listener 
