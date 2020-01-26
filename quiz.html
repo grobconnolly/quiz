@@ -24,8 +24,11 @@
 
 
         <div class="main">
+            
 
             <!-- Question Set-Up 1 -->
+
+            
             <form class="questionForm" id="question1" data-question="1">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -673,12 +676,19 @@
             <div class="pull-left">
                 Total: 10 Questions
             </div>
-            <div id="stopWatch" class="pull-right">
-                0
-            </div>
+            <p class="pull-right">
+                    <span id="hour">00</span> :
+                    <span id="min">00</span> :
+                    <span id="sec">00</span> :
+                    <span id="milisec">00</span>
+                  </p>
+                  
+                  <!-- <button onclick="startStop()" id="start">Start</button>
+                  <button onclick="reset()">Reset</button> -->
         </footer>
 
     </div>
 </body>
 
 </html>
+
