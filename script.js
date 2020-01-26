@@ -5,8 +5,10 @@ var total = 10; //total nmumber of questions
 var point = 1; //points per correct answer
 var highest = total * point;
 
-//init
 
+
+//init
+console.log('script js loaded')
 function init() {
     //set correct answers
     
@@ -25,17 +27,17 @@ function init() {
 
 // timer
 
-var i = 1;
-$("#startButton").click(function (e) {
-    setInterval(function () {
-        $("#stopWatch").html(i);
-        i++;
-    }, 1000);
-});
+// var i = 1;
+// $("#startButton").click(function (e) {
+//     setInterval(function () {
+//         $("#stopWatch").html(i);
+//         i++;
+//     }, 1000);
+// });
  
-$("#resetButton").click(function (e) {
-    i = 0;
-});
+// $("#resetButton").click(function (e) {
+//     i = 0;
+// });
 
 
 
@@ -75,7 +77,7 @@ function process(n) {
 
 
 if (n == total) {
-    $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <a href= "enterinfo.html">Add Your Name To Scoreboard!</a>')
+    $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <button onclick="myScore()">Add Your Name To Scoreboard!</a>')
 }
 return false;
 }
@@ -84,7 +86,16 @@ window.yourPoints = function(){
     return n;
 }
 
+function myScore(){
+  
+        var person = prompt("Please enter your name", "My First Name");
+        if (person != null) {
+          document.getElementById("myScore").innerHTML =
+            person+ " " +score
+        }
+}
 
+console.log(localStorage)
 
 //adding an event listener 
 window.addEventListener('load',init,false);
