@@ -25,20 +25,6 @@ function init() {
 
 }
 
-// timer
-
-// var i = 1;
-// $("#startButton").click(function (e) {
-//     setInterval(function () {
-//         $("#stopWatch").html(i);
-//         i++;
-//     }, 1000);
-// });
- 
-// $("#resetButton").click(function (e) {
-//     i = 0;
-// });
-
 
 
  //hide all questions to start
@@ -78,7 +64,9 @@ function process(n) {
 
 if (n == total) {
     $('#results').html('<h3>Your score is: '+score+ ' out of '+highest+'!</h3> <button onclick="myScore()">Add Your Name To Scoreboard!</a>')
+  stop()
 }
+  
 return false;
 }
 
@@ -99,12 +87,6 @@ function myScore(){
 }
 
 
-// function showTime() {
-//     var d = new Date();
-//     document.getElementById("clock").innerHTML = d.toLocaleTimeString();
-// }
-// setInterval(showTime, 1000);
-
 var x;
 var startstop = 0;
 
@@ -114,9 +96,9 @@ window.onload = function startStop() { /* Toggle StartStop */
 
   if (startstop === 1) {
     start();
-    document.getElementById("start").innerHTML = "Stop";
+    document.getElementById("start").innerHTML= "Stop";
   } else if (startstop === 2) {
-    document.getElementById("start").innerHTML = "Start";
+    document.getElementById("start").innerHTML= "Start";
     startstop = 0;
     stop();
   }
@@ -175,10 +157,9 @@ function timer() {
   }
 
 
-  document.getElementById("milisec").innerHTML = miliSecOut;
   document.getElementById("sec").innerHTML = secOut;
   document.getElementById("min").innerHTML = minOut;
-  document.getElementById("hour").innerHTML = hourOut;
+  // document.getElementById("hour").innerHTML = hourOut;
 
 }
 
