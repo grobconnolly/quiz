@@ -86,14 +86,19 @@ window.yourPoints = function(){
     return n;
 }
 
+
+
 function myScore(){
   
         var person = prompt("Please enter your name", "My First Name");
         if (person != null) {
           document.getElementById("myScore").innerHTML =
-            person+ " " +score
+           person+ " " +score
         }
+        
 }
+
+
 
 console.log(localStorage)
 
